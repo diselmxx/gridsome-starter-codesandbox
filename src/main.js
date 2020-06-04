@@ -1,9 +1,9 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+import '~/assets/style.css'
+import '~/bootstrap'
 import DefaultLayout from '~/layouts/Default.vue'
+import Container from '~/components/base/Container.vue'
 
-export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
+  Vue.component('Container', Container)
 }
